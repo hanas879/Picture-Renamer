@@ -8,7 +8,7 @@ bilder = r"C:\Users\henmil\Documents\GitHub\Picture-Renamer\SATS.csv"
 #Path to the image directory
 mappe = r"C:\Users\henmil\Documents\GitHub\Picture-Renamer\Bilder"
 #Specify the fileformat to use
-fileformat = ".docx"
+fileformat = ".jpg"
 
 
 
