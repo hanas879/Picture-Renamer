@@ -22,7 +22,6 @@ with open(bilder) as csvfile:
 
 
 
-print(result)
 #Renames the files
 i = 0
 os.chdir(mappe)
