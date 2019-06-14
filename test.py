@@ -21,11 +21,11 @@ with open(bilder) as csvfile:
         result.append(row)
 
 
-
+print(result)
 
 #Renames the files
-i = 0
-os.chdir(mappe)
-while i < len(result):
-    os.rename(result[i][0]+fileformat,"".join(result[i][1])+fileformat)
-    i += 1
+#i = 0
+#os.chdir(mappe)
+#while i < len(result):
+#    os.rename(result[i][0]+fileformat,"".join(result[i][1])+fileformat)
+#    i += 1
