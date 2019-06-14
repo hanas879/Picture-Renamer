@@ -3,8 +3,13 @@
 import os
 import csv
 
-bilder = r"C:\Users\henmil\Documents\GitHub\Picture-Renamer\SATS.csv"    #Path to the CSV file
-mappe = r"C:\Users\henmil\Documents\GitHub\Picture-Renamer\Bilder"       #Path to the image directory
+#Path to the CSV file
+bilder = r"C:\Users\henmil\Documents\GitHub\Picture-Renamer\SATS.csv"
+#Path to the image directory
+mappe = r"C:\Users\henmil\Documents\GitHub\Picture-Renamer\Bilder"
+#Specify the fileformat to use
+fileformat = ".docx"
+
 
 
 result = []
@@ -22,5 +27,5 @@ with open(bilder) as csvfile:
 i = 0
 os.chdir(mappe)
 while i < len(result):
-    os.rename(result[i][0],"".join(result[i][1]))
+    os.rename(result[i][0]+fileformat,"".join(result[i][1])+fileformat)
     i += 1
