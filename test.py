@@ -3,10 +3,11 @@
 import os
 import csv
 
+
 #Path to the CSV file
-bilder = r"C:\Users\henmil\Documents\GitHub\Picture-Renamer\SATS.csv"
+bilder = os.getcwd() + "/SATS.csv"
 #Path to the image directory
-mappe = r"C:\Users\henmil\Documents\GitHub\Picture-Renamer\Bilder"
+mappe = os.getcwd() + "/Bilder"
 #Specify the fileformat to use
 fileformat = ".docx"
 
@@ -22,6 +23,8 @@ with open(bilder) as csvfile:
 
 
 print(result)
+print(bilder)
+print(mappe)
 
 #Renames the files
 #i = 0
