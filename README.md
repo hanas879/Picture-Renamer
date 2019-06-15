@@ -1,5 +1,6 @@
 # Picture-Renamer
 A tool for changing name on files from an .cvc file
+<hr>
 <br>
 <br>
 <b>NB!:</b>
