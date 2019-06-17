@@ -3,12 +3,15 @@
 import os
 import csv
 
-#Path to the CSV file
-bilder = os.getcwd() + "/SATS.csv"
-#Path to the image directory
-mappe = os.getcwd() + "/Bilder"
-#Specify the fileformat to use
+#IMPORTANT!!!! Specify the fileformat to use, and don't delete the "."
 fileformat = ".jpg"
+
+
+
+#Gets the current working directory and points to the .csv file
+bilder = os.getcwd() + "/SATS.csv"
+#Gets the current working directory and points to the image directory
+mappe = os.getcwd() + "/Bilder"
 
 
 
