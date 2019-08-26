@@ -35,6 +35,9 @@ while i < len(result):
         print(result[i][0] + " --> " + result[i][1])
     elif(os.path.isfile(result[i][0] + ".jpg") == False):
         print("!!--" + result[i][0] + ";" + result[i][1] + " is missing--!!")
+        file = open("Missing.txt", "a")
+        file.write('\n' + result[i][0] + ";" + result[i][1])
+        file.close()
     else:
         print("ERROR!")
     
