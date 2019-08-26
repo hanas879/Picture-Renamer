@@ -15,3 +15,5 @@ pip install pyinstaller
 ```
 pyinstaller -w -F yourprogram.py
 ```
+<br>
+<b>After this you will find your .exe file under the "dist" directory</b>
