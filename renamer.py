@@ -9,7 +9,7 @@ fileformat = ".jpg"
 
 
 #Gets the current working directory and points to the .csv file
-bilder = os.getcwd() + "/SATS.csv"
+bilder = os.getcwd() + "/id.csv"
 #Gets the current working directory and points to the image directory
 mappe = os.getcwd() + "/Bilder"
 
