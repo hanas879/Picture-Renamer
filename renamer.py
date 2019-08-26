@@ -29,5 +29,13 @@ with open(bilder) as csvfile:
 i = 0
 os.chdir(mappe)
 while i < len(result):
-    os.rename(result[i][0]+fileformat,"".join(result[i][1])+fileformat)
+    
+    if(os.path.isfile(result[i][0]+ ".jpg") == True):
+        os.rename(result[i][0]+fileformat,"".join(result[i][1])+fileformat)
+        print(result[i][0] + " --> " + result[i][1])
+    elif(os.path.isfile(result[i][0] + ".jpg") == False):
+        print("!!--" + result[i][0] + ";" + result[i][1] + " is missing--!!")
+    else:
+        print("ERROR!")
+    
     i += 1
